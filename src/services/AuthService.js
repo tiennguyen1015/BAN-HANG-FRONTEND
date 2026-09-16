@@ -1,7 +1,7 @@
 import axios from "axios";
 import axiosClient from "./axiosClient";
 
-const REST_API_BAES_URL = 'http://localhost:8080/auth';
+const REST_API_BAES_URL = 'https://ban-hang-production.up.railway.app/auth';
 
 // const token = localStorage.getItem("token");
 // axios.get("http://localhost:8080/users", {

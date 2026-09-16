@@ -2,7 +2,7 @@ import axios from "axios";
 import axiosClient from "./axiosClient";
 
 
-const REST_API_BAES_URL = 'http://localhost:8080/categories';
+const REST_API_BAES_URL = 'https://ban-hang-production.up.railway.app/categories';
 
 export const listCaregory=(searchKeyword, page,size)=>{
 	return axiosClient.get("/categories",{

@@ -1,7 +1,7 @@
 import axios from "axios";
 import axiosClient from "./axiosClient";
 
-const REST_API_BAES_URL= 'http://localhost:8080/products';
+const REST_API_BAES_URL= 'https://ban-hang-production.up.railway.app/products';
 
 export const listProducts=(searchKeyword, page, size)=> {
 	return axiosClient.get("/products",{

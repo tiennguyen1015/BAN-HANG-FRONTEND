@@ -2,7 +2,7 @@ import axios from "axios";
 import api from "../page/config/AxiosConfig";
 import axiosClient from "./axiosClient";
 
-const REST_API_BAES_URL = 'http://localhost:8080/users';
+const REST_API_BAES_URL = 'https://ban-hang-production.up.railway.app/users';
 
 
 export const listUser = (searchKeyword, page, size) => {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import axiosClient from "./axiosClient";
 
-const API_URL = "http://localhost:8080";
+const API_URL = "https://ban-hang-production.up.railway.app";
 
 export const createOrder = (orderRequest) => {
   return axiosClient.post(`/order`, orderRequest);

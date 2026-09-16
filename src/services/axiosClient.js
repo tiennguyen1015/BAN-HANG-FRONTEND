@@ -2,7 +2,7 @@ import axios from "axios";
 import { refreshToken } from "./AuthService";
 
 const axiosClient = axios.create({
-    baseURL: "http://localhost:8080"
+    baseURL: "https://ban-hang-production.up.railway.app"
 });
 
 // Dùng để đảm bảo tại một thời điểm
