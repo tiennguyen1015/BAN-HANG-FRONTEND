@@ -205,7 +205,7 @@ const EditProductComponent = () => {
 					✕
 				</button>
 				<img
-					src={`http://localhost:8080/uploads/${image.imageUrl}`}
+					src={`https://ban-hang-production.up.railway.app/uploads/${image.imageUrl}`}
 					alt={image.imageUrl}
 					width="120"
 				/>

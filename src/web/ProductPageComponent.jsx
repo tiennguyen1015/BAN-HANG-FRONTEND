@@ -87,7 +87,7 @@ const ProductPageComponent = () => {
                                             {product.images.map((image) => (
                                                 <SwiperSlide key={image.id}>
                                                     <img
-                                                        src={`http://localhost:8080/uploads/${image.imageUrl}`}
+                                                        src={`https://ban-hang-production.up.railway.app/uploads/${image.imageUrl}`}
                                                         alt={product.name}
                                                     />
                                                 </SwiperSlide>
@@ -95,7 +95,7 @@ const ProductPageComponent = () => {
                                         </Swiper>
                                     ) : (
                                         <img
-                                            src={`http://localhost:8080/uploads/${product.images?.[0]?.imageUrl}`}
+                                            src={`https://ban-hang-production.up.railway.app/uploads/${product.images?.[0]?.imageUrl}`}
                                             alt={product.name}
                                         />
                                     )}

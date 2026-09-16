@@ -134,7 +134,7 @@ const ListProductComponent = () => {
 							{product.images.map(img => (
 								<img
 								key={img.id}
-								src={`http://localhost:8080/uploads/${img.imageUrl}`}
+								src={`https://ban-hang-production.up.railway.app/uploads/${img.imageUrl}`}
 								width="60"
 								height="60"
 								style={{ marginRight: "5px" }} />

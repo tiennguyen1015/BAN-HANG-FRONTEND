@@ -139,7 +139,7 @@ const HeaderComponent = () => {
                 {" "}
                 {user?.imageUrl ? (
                   <img
-                    src={`http://localhost:8080/uploads/${user.imageUrl}`}
+                    src={`https://ban-hang-production.up.railway.app/uploads/${user.imageUrl}`}
                     alt="Avatar"
                     style={{
                       width: "40px",

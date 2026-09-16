@@ -107,7 +107,7 @@ const HomeComponent = () => {
                     {product.images.map((image) => (
                       <SwiperSlide key={image.id}>
                         <img
-                          src={`http://localhost:8080/uploads/${image.imageUrl}`}
+                          src={`https://ban-hang-production.up.railway.app/uploads/${image.imageUrl}`}
                           alt={product.name}
                           className="product-image"
                         />
@@ -118,7 +118,7 @@ const HomeComponent = () => {
                   <img
                     src={
                       product.images?.length
-                        ? `http://localhost:8080/uploads/${product.images[0].imageUrl}`
+                        ? `https://ban-hang-production.up.railway.app/uploads/${product.images[0].imageUrl}`
                         : "/no-image.png"
                     }
                     alt={product.name}

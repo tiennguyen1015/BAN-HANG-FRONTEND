@@ -32,7 +32,7 @@ const AccountComponent = () => {
 	  {/* Avatar */}
 	  <div className="avatar-section">
 		<div className="avatar">
-			<img src={`http://localhost:8080/uploads/${user.imageUrl}`}
+			<img src={`https://ban-hang-production.up.railway.app/uploads/${user.imageUrl}`}
 			style={{
 				width:"75px",
                 height: "75px",

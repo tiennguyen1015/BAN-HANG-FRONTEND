@@ -190,7 +190,7 @@ const DetailOrderComponent = () => {
                   <td>
                     <div className="productorder">
                       <img
-                        src={`http://localhost:8080/uploads/${item.product?.images[0]?.imageUrl}`}
+                        src={`https://ban-hang-production.up.railway.app/uploads/${item.product?.images[0]?.imageUrl}`}
                         alt="Avatar"
                         style={{
                           width: "40px",

@@ -199,7 +199,7 @@ const CheckOutComponent = () => {
               <tr key={item.id}>
                 <td className="product-checkout">
                   <img
-                    src={`http://localhost:8080/uploads/${item.product.images?.[0]?.imageUrl}`}
+                    src={`https://ban-hang-production.up.railway.app/uploads/${item.product.images?.[0]?.imageUrl}`}
                     alt={item.product.name}
                   />
                   <div>

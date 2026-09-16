@@ -20,7 +20,7 @@ const ProductDetailComponent = () => {
         // lấy ảnh đầu tiên làm ảnh lớn
         if(data.images && data.images.length > 0){
             setSelectedImage(
-                `http://localhost:8080/uploads/${data.images[0].imageUrl}`
+                `https://ban-hang-production.up.railway.app/uploads/${data.images[0].imageUrl}`
             );
 
         }
@@ -116,7 +116,7 @@ const ProductDetailComponent = () => {
 	className="thumb-swiper"
 >
 	{product?.images?.map((image) => {
-		const imageUrl = `http://localhost:8080/uploads/${image.imageUrl}`;
+		const imageUrl = `https://ban-hang-production.up.railway.app/uploads/${image.imageUrl}`;
 
 		return (
 			<SwiperSlide key={image.id}>
