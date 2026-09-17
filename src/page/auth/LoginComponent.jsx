@@ -31,7 +31,7 @@ function LoginComponent() {
               }
   
               alert("Đăng nhập thành công");
-              navigate("/users");
+              navigate("/dashboard");
           })
           .catch((error) => {
             alert(error.response.data.message);

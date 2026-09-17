@@ -27,6 +27,7 @@ import AccountComponent from "./web/AccountComponent.jsx";
 import DashboardComponent from "./page/DashboardComponent.jsx";
 import ListOrderComponent from "./page/order/ListOrderComponent.jsx";
 import DetailOrderComponent from "./page/order/DetailOrderComponent.jsx";
+import ContactComponent from "./web/ContactComponent.jsx";
 
 function App() {
   return (
@@ -83,6 +84,8 @@ function App() {
             <Route path="/order" element={<OrderComponent />} />
             <Route path="/checkout" element={<CheckOutComponent />} />
             <Route path="/profile" element={<AccountComponent />} />
+
+            <Route path="/contact" element={<ContactComponent />} />
           </Route>
         </Routes>
       </BrowserRouter>
