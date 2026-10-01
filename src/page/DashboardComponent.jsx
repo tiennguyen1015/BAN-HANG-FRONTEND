@@ -3,7 +3,7 @@ import { getProfile } from "../services/AuthService";
 import { getDashboard } from "../services/DashboardService";
 import { getOrderToday } from "../services/OrderService";
 import { getProductStock } from "../services/ProductService";
-
+import "../assets/css/Dashboard.css";
 const DashboardComponent = () => {
   const [dashboard, setDashboard] = useState();
   const [user, setUser] = useState(null);

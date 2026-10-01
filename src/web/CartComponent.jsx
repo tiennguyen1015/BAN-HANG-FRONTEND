@@ -3,6 +3,8 @@ import'../assets/css/web/Cart.css'
 import { getCartByUserId,deleteCartItem } from '../services/CartService';
 import { updateCartItemQuantity } from '../services/CartItemService';
 import { useNavigate } from 'react-router-dom';
+import "../assets/css/web/Cart.css"
+
 const CartComponent = () => {
     const [cart, setCart] = useState({
         cartItems: []

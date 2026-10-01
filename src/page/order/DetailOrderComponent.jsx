@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getOrderById } from "../../services/OrderService";
-
+import "../../assets/css/detailOrder.css";
 const DetailOrderComponent = () => {
   const { orderId } = useParams();
   const [order, setOrder] = useState({});

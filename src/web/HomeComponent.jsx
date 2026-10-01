@@ -10,7 +10,9 @@ import { addToCart } from "../services/ProductService";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-const HomeComponent = () => {
+import "../assets/css/web/Home.css";
+
+function HomeComponent() {
   const [categorys, setCategorys] = useState([]);
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
@@ -168,6 +170,6 @@ const HomeComponent = () => {
       </section>
     </div>
   );
-};
+}
 
 export default HomeComponent;

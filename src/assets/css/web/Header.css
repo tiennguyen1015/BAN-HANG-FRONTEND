@@ -1,83 +1,201 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-header{
-    width:100%;
-    position:sticky;
-    top:0;
-    z-index:999;
+.top-header {
+  background: #0d6efd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
 }
 
-.top-header{
-    background:#0d6efd;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 60px;
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.logo a{
-    color:white;
-    text-decoration:none;
-    font-size:30px;
-    font-weight:bold;
+.search-box {
+  flex: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.search-box{
-    display:flex;
-    width:500px;
+.search-box input {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  /* flex: 1; */
+  padding: 12px;
+  height: 60px;
+  width: 70%;
 }
 
-.search-box input{
-    flex:1;
-    padding:12px;
-    border:none;
-    outline:none;
-    border-radius:5px 0 0 5px;
+.search-box button {
+  color: #fff;
+  cursor: pointer;
+  background: #ff5722;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  width: 10%;
+  margin: 0;
 }
 
-.search-box button{
-    width:60px;
-    border:none;
-    background:#ff5722;
-    color:white;
-    cursor:pointer;
-    border-radius:0 5px 5px 0;
+.header-right {
+  gap: 5px;
+  display: flex;
+  flex: 1;
 }
 
-.header-right{
-    display:flex;
-    gap:30px;
+.header-right a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 18px;
 }
 
-.header-right a{
-    color:white;
-    text-decoration:none;
-    display:flex;
-    gap:8px;
-    align-items:center;
-    font-size:18px;
+.menu {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.menu{
-    background:white;
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:15px;
-    box-shadow:0 2px 6px rgba(0,0,0,.1);
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: #0d6efd;
 }
 
-.menu a{
-    text-decoration:none;
-    color:#333;
-    font-weight:600;
-    transition:.3s;
-}
-.menu a:hover{
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
 
-    color:#0d6efd;
+@media (max-width: 768px) {
+  /* Header chính */
+  .top-header {
+    padding: 12px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Logo */
+  .logo {
+    flex: 1;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  /* Khu vực bên phải */
+  .header-right {
+    gap: 15px;
+  }
+
+  .header-right a {
+    font-size: 0;
+    gap: 0;
+  }
+
+  /* Icon vẫn hiển thị */
+  .header-right a i {
+    font-size: 20px;
+  }
+
+  /* Ô tìm kiếm xuống dòng */
+  .search-box {
+    width: 100%;
+    order: 3;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .search-box button {
+    width: 50px;
+  }
+
+  /* Menu */
+  .menu {
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .menu a {
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  /* Ẩn thanh cuộn ngang */
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu {
+    scrollbar-width: none;
+  }
+}
+
+.footer {
+  bottom: 0;
+}
+
+/* =========================
+   ĐIỆN THOẠI NHỎ
+========================= */
+
+@media (max-width: 480px) {
+  .top-header {
+    padding: 10px 12px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .header-right {
+    gap: 12px;
+  }
+
+  .header-right a i {
+    font-size: 18px;
+  }
+
+  .search-box input {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .search-box button {
+    width: 45px;
+  }
+
+  .menu a {
+    padding: 11px 13px;
+    font-size: 13px;
+  }
 }

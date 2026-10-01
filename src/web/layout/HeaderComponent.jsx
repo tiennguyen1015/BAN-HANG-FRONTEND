@@ -4,6 +4,8 @@ import { listCaregory } from "../../services/CategoryService";
 import { jwtDecode } from "jwt-decode";
 import { getProfile, logout, refreshToken } from "../../services/AuthService";
 
+import "../../assets/css/web/Header.css";
+
 const HeaderComponent = () => {
   const [categorys, setCategorys] = useState([]);
   const navigate = useNavigate();

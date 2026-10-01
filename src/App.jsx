@@ -28,6 +28,8 @@ import DashboardComponent from "./page/DashboardComponent.jsx";
 import ListOrderComponent from "./page/order/ListOrderComponent.jsx";
 import DetailOrderComponent from "./page/order/DetailOrderComponent.jsx";
 import ContactComponent from "./web/ContactComponent.jsx";
+import PrintComponent from "./web/PrintComponent.jsx";
+import VerifyEmailComponent from "./web/VerifyEmailComponent.jsx";
 
 function App() {
   return (
@@ -56,6 +58,9 @@ function App() {
           />
 
           <Route path="/heard" element={<HeaderComponent />} />
+
+          <Route path="/Print" element={<PrintComponent />} />
+          <Route path="/verify-email" element={<VerifyEmailComponent />} />
 
           {/* trang quản trị */}
           <Route element={<Layout />}>

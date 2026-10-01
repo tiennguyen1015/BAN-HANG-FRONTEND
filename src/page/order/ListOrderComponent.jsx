@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getAllOrder, updateOrderStatus } from "../../services/OrderService";
 import { useNavigate } from "react-router-dom";
+import "../../assets/css/Order.css";
 
 const ListOrderComponent = () => {
   const [orders, setOrders] = useState([]);

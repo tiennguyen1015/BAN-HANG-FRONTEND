@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getCartByUserId } from "../services/CartService";
 import { createOrder } from "../services/OrderService";
-
+import "../assets/css/web/Checkout.css";
 const CheckOutComponent = () => {
   const location = useLocation();
   const cartItemIds = location.state?.cartItemIds || [];
