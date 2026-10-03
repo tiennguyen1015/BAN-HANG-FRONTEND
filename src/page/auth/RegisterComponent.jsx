@@ -67,7 +67,6 @@ const RegisterComponent = () => {
       });
 
     console.log(user);
-
     // TODO: Gọi API Register
   };
 
